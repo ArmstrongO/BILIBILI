@@ -1,0 +1,15 @@
+pip freeze > requirements.txt
+导出第三方插件版本号
+
+python -m pip install pyinstaller -i https://pypi.douban.com/simple
+#打包EXE
+
+（在EXE插件目录下运行cmd）
+pyinstaller -w -F sese.py
+pyinstaller -F studen.py
+
+# 将audio1.mp4 与 video.mp4合并 输出output.mp4
+ffmpeg.exe -i audio1.mp4 -i video.mp4 -acodec copy -vcodec copy output.mp4
+
+pip install pycrypto
+#安装AES
