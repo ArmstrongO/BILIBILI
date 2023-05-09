@@ -1,0 +1,12 @@
+data:
+  phone : SWY4C16B27003774
+  monkeyclickcount : 1000           # Monkey点击次数
+  packages : com.google.android.youtube              # 要测试的包名
+  path_text : 'logs/text.log'         # 运行日志保存地址
+  error: 'logs/error.log'             # 错误日志保存地址
+  throttle : 500                      # 事件的时延，单位是毫秒
+  send: 1000 100                      # 用于指定伪随机数生成器的seed值
+  syskeys: 70 1000                    # 调整“系统”按键事件的百分比(这些按键通常被保留，由系统使用，如Home、Back、Start Call、End Call及音量控制键)
+  appswitch: 10 1000                  # 调整其它类型事件的百分比。它包罗了所有其它类型的事件，如：按键、其它不常用的设备按钮、等等
+  count : 3                           # 暂时用不上，如果后期需要执行次数的话可以使用
+  touch : 80                          # 设置操作事件的百分比  显示详细信息，随机执行80个事件，
