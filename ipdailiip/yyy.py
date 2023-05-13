@@ -183,9 +183,9 @@ def test_list(ip_dic):
 ## 4.结果展示
 def save_ip_text(ip_dic):
     for ip in list(ip_dic.keys()):
-        with open("IP_Pool.txt", 'a', encoding='utf-8') as fd:
+        with open("IP_Pool1.txt", 'a', encoding='utf-8') as fd:
             fd.write(str(ip) + ",\t" + str(ip_dic[ip]) + '\n')
-    print('可用IP池已保存至IP_Pool.txt')
+    print('可用IP池已保存至IP_Pool1.txt')
 
 
 def show_ip(ip_dic):
@@ -204,7 +204,7 @@ def main():
     # ip_dic = dict(ip_dic, **get_66ip_IP())
     ip_dic = dict(ip_dic, **get_ip3366_IP())
     # ip_dic = dict(ip_dic, **get_89ip_IP())
-    # ip_dic = dict(ip_dic, **get_kxdaili_IP())
+    ip_dic = dict(ip_dic, **get_kxdaili_IP())
     print('2.完成初步IP收集')
     print('抓取到共计\t' + str(len(ip_dic)) + '个IP')
     print('------------------------------------------------')

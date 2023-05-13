@@ -93,6 +93,8 @@ def get_tunnel_proxies():
         "http": proxyUrl,
         "https": proxyUrl,
     }
+    resp = requests.get ( "https://ip.cn/api/index?ip=&type=0", proxies=proxies )
+    print ( resp.text )
     return proxies
 
 def gen_uuid():
@@ -216,6 +218,8 @@ def run():
             print(e)
             pass
 
-if __name__ ==  "__main__":
-    run()
+# if __name__ ==  "__main__":
+#     run()
 
+while 1:
+    print(get_tunnel_proxies())
